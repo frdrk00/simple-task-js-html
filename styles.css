@@ -1,0 +1,144 @@
+/* header */
+#header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+#header h1 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#header h2 {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #666;
+}
+
+/* main section */
+.shop-item {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  margin: 18px;
+  padding: 0px;
+  border: 1px solid #ccc;
+  width: 200px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.shop-item div {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shop-item:last-child {
+  margin-right: 0;
+}
+
+.shop-item img {
+  width: 200px;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.shop-item h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+
+.shop-item h3 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.shop-item h4 {
+  color: #FF4D4D;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0px;
+}
+.shop-item h5 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #e4e4e4;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.shop-item h6 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  color: #e4e4e4;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.shop-item p:last-child {
+  font-weight: bold;
+}
+
+.shop-item button {
+  display: inline-flex;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.shop-item button:hover {
+  background-color: #e7e7e7;
+}
+
+/* footer */
+#footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
