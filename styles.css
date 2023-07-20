@@ -1,4 +1,24 @@
-/* header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  height: 100%;
+  background: linear-gradient(135deg, #f3f3f3, #e6e6e6);
+}
+
+#shopContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Header */
 #header {
   background-color: #f8f8f8;
   padding: 20px;
@@ -7,9 +27,11 @@
 
 #header h1 {
   margin-top: 0;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
   color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #header h2 {
@@ -18,25 +40,25 @@
   color: #666;
 }
 
-/* main section */
+/* Main section */
 .shop-item {
-  box-sizing: border-box;
   display: inline-block;
   text-align: center;
-  margin: 18px;
-  padding: 0px;
+  margin: 15px;
   border: 1px solid #ccc;
-  width: 200px;
+  width: 270px;
+  height: 408px;
   border-radius: 20px;
   background: #fff;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 .shop-item div {
-  padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .shop-item:last-child {
@@ -44,15 +66,15 @@
 }
 
 .shop-item img {
-  width: 200px;
   height: 270px;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
 
 .shop-item h2 {
   color: #000;
-  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -65,10 +87,9 @@
   flex-direction: row;
   margin-bottom: 5px;
   margin-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #000;
-  font-family: Roboto;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
@@ -76,8 +97,7 @@
 }
 
 .shop-item h4 {
-  color: #FF4D4D;
-  font-family: Roboto;
+  color: #ff4d4d;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -88,11 +108,10 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 5px;
-  margin-top: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   color: #e4e4e4;
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -108,13 +127,13 @@
   padding-right: 10px;
   text-align: left;
   color: #e4e4e4;
-  font-family: Roboto;
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
 
 .shop-item p:last-child {
   font-weight: bold;
@@ -123,22 +142,93 @@
 .shop-item button {
   display: inline-flex;
   padding: 5px 15px;
+  margin-left: 20px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 20px;
   border: 1px solid #000;
   background: #fff;
-  cursor: pointer;
 }
 
 .shop-item button:hover {
   background-color: #e7e7e7;
+  cursor: pointer;
 }
 
 /* footer */
-#footer {
-  background-color: #f8f8f8;
+.footer {
+  margin-top: 30px;
+  background-color: #f2f2f2;
   padding: 20px;
   text-align: center;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #0077b5;
+}
+
+/* Strikethrough text */
+.strikethrough-text {
+  position: relative;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.strikethrough-text::before,
+.strikethrough-text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 767px) {
+  #shopContainer {
+    flex-direction: column;
+  }
+
+  #header h2 {
+    margin-bottom: 0;
+    font-size: 18px;
+    color: #666;
+  }
+
+  .shop-item {
+    margin: 15px 0;
+  }
+
+  .shop-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    margin: 5px;
+  }
 }
