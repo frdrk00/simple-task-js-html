@@ -21,7 +21,7 @@ body {
 /* Header */
 #header {
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -38,6 +38,22 @@ body {
   margin-bottom: 0;
   font-size: 18px;
   color: #666;
+}
+
+#header button {
+  padding: 10px 20px;
+  margin: 5px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: #fff;
+  background-color: #919191;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+#header button:hover {
+  background-color: #333;
+  cursor: pointer;
 }
 
 /* Main section */
@@ -148,7 +164,8 @@ body {
   gap: 10px;
   border-radius: 20px;
   border: 1px solid #000;
-  background: #fff;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
 }
 
 .shop-item button:hover {
